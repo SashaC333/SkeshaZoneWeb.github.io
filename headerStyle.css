@@ -1,0 +1,147 @@
+/* HEADER Y NAV */
+.header {
+  width: 100%;
+  height: 100px;
+}
+
+.nav {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px; /* márgenes internos del 20% vertical, 5% horizontal */
+  background-color: var(--cNegro);
+  position: relative;
+}
+
+.nav__logo {
+  flex: 1;
+}
+
+nav img{
+    height: 50px;
+}
+
+.nav__img {
+  object-fit: contain;
+}
+
+/* versión móvil: solo el botón con imagen */
+.nav__toggler {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.nav__toggler-img {
+  width: 32px;
+  height: 100px;
+}
+
+/* lista de enlaces (oculto por defecto en móvil) */
+.nav__list {
+  list-style: none;
+  display: none;
+  margin: 0;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: var(--cBlanco);        /* se ve mejor en fondo oscuro */
+  font-size: 1rem;
+  margin-left: 20px;
+}
+
+/* Sidepanel a la derecha */
+.sidepanel {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 0;            /* a la derecha */
+  background-color: var(--cTNegro);
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: width 0.5s;
+}
+
+.sidepanel.open {
+  width: 250px;        /* ancho cuando se abre */
+}
+
+/* Botón de cierre dentro del sidepanel */
+.sidepanel__close {
+  position: absolute;
+  top: 0;
+  left: 10px;          /* cerca del borde izquierdo interno */
+  font-size: 32px;
+  color: var(--cBlanco);
+  text-decoration: none;
+  padding: 12px;
+}
+
+/* Enlaces del sidepanel */
+.sidepanel__link {
+  display: block;
+  padding: 15px 20px;
+  color: var(--cBlanco);
+  text-decoration: none;
+}
+
+.sidepanel__link:hover {
+  color: var(--cAmarillo);
+  transition: width 0.5s;
+}
+
+/* Fondo oscuro detrás del sidepanel */
+.sidepanel::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--cTNegro);
+  opacity: 0;
+  transition: opacity 0.5s;
+  z-index: -1;
+}
+
+.sidepanel.open::before {
+  opacity: 1;
+}
+
+/* MEDIA QUERY: pantallas grandes (mobile first) */
+@media (min-width: 768px) {
+   
+  .nav {
+    padding: 10px 40px;      /* márgenes internos más equilibrados */
+  }
+
+  .nav__toggler {
+    display: none;    /* oculto en grande */
+  }
+
+  .sidepanel {
+    display: none;    /* el nav grande usa .nav__list */
+  }
+
+  .nav__list {
+    display: flex;    /* se muestran los enlaces */
+  }
+
+  .nav__link {
+    margin-left: 2rem;
+  }
+
+  .nav__link:hover {
+  color: var(--cAmarillo);
+  transition: width 0.5s;
+}
+
+  .nav__logo {
+    flex: 0 0 auto;
+  }
+}
