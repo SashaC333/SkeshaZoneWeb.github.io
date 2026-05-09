@@ -91,7 +91,8 @@ nav img{
 }
 
 .sidepanel__link:hover {
-  background-color: #575757;
+  color: var(--cAmarillo);
+  transition: width 0.5s;
 }
 
 /* Fondo oscuro detrás del sidepanel */
@@ -134,6 +135,11 @@ nav img{
   .nav__link {
     margin-left: 2rem;
   }
+
+  .nav__link:hover {
+  color: var(--cAmarillo);
+  transition: width 0.5s;
+}
 
   .nav__logo {
     flex: 0 0 auto;
