@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="css/generalStyle.css" />
+  <link rel="stylesheet" href="css/headerStyle.css" />
+  <link rel="stylesheet" href="css/footerStyle.css" />
+  <link rel="stylesheet" href="css/sectionStyle.css" />
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav">
+      <!-- logotipo -->
+      <div class="nav__logo">
+        <img src="icons/LG.svg" alt="Logo" class="nav__img" />
+      </div>
+
+      <!-- -->
+      <ul class="nav__list">
+        <li><a href="index.html" class="nav__link">Inicio</a></li>
+        <li><a href="servicios.html" class="nav__link">Servicios</a></li>
+        <li><a href="nosotros.html" class="nav__link">Nosotros</a></li>
+        <li><a href="contacto.html" class="nav__link">Contacto</a></li>
+      </ul>
+
+      <!-- burger -->
+      <button class="nav__toggler" id="navToggler" aria-label="Menú">
+        <img src="icons/menu.svg" alt="Menú" class="nav__toggler-img" />
+      </button>
+    </nav>
+  </header>
+
+  <!-- Sidepanel colapsable a la derecha (móvil) -->
+  <div class="sidepanel" id="mySidepanel">
+    <a href="javascript:void(0)" class="sidepanel__close" id="sidepanelClose">&times;</a>
+    <a href="inicio.html" class="sidepanel__link">Inicio</a>
+    <a href="servicios.html" class="sidepanel__link">Servicios</a>
+    <a href="nosotros.html" class="sidepanel__link">Nosotros</a>
+    <a href="contacto.html" class="sidepanel__link">Contacto</a>
+  </div>
+
+  <main class="main-content">
+    <p>Contenido principal</p>
+  </main>
+  <script src="js/navMenu.js"></script>
+
+
+
+  <footer>
+    <img src="icons/LG.svg" alt="Logo">
+    <div>
+      <a href="#"><img src="icons/Instagram.svg" alt="Instagram"></a>
+      <a href="#"><img src="icons/Cara_icono.svg" alt="Cara"></a>
+    </div>
+  </footer>
+</body>
+
+</html>

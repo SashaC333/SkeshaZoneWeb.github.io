@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: Nunito;
+    color: var(--cNegro);
+}
+body{
+    background-color: var(--cBlanco);
+}
+
+/*COLORES*/
+:root{
+    --cNegro:#23201c;
+    --cTNegro:#23201cb7;
+    --cBlanco:#e4dfd1;
+    --cAmarillo:#d7d261;
+    --cAzul:#0c5fb3;
+}
+
+/*FUENTES*/
+@font-face{
+font-family:Nunito;
+src:url(../fonts/Nunito/Nunito-VariableFont_wght.ttf)
+}
+@font-face {
+    font-family: Patrick_hand;
+    src: url(../fonts/Patrick_Hand/PatrickHand-Regular.ttf);
+}
