@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,14 +9,13 @@
   <link rel="stylesheet" href="css/headerStyle.css" />
   <link rel="stylesheet" href="css/footerStyle.css" />
   <link rel="stylesheet" href="css/sectionStyle.css" />
-
-
+  <link rel="stylesheet" href="css/sectionStyle_carrusel.css">
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-179NMFYLCB"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag() { dataLayer.push(arguments); }
   gtag('js', new Date());
 
   gtag('config', 'G-179NMFYLCB');
@@ -44,7 +44,6 @@
     </nav>
   </header>
 
-  <!-- Sidepanel colapsable a la derecha (móvil) -->
   <div class="sidepanel" id="mySidepanel">
     <a href="javascript:void(0)" class="sidepanel__close" id="sidepanelClose">&times;</a>
     <a href="index.html" class="sidepanel__link">Inicio</a>
@@ -54,17 +53,135 @@
   </div>
 
   <main class="main-content">
-    <p>Contenido principal</p>
+    <div class="parallax">
+      <div class="hero-text">
+        <h1>¿Quiénes somos?</h1>
+        <p>Somos un servicio enfocado en la creación de ilustraciones para diferentes medios, como diferentes tipos de portadas, fotos de perfil, hojas de personajes, hasta dibujos simples y bocetos. Además de tener un apartado donde nos enfocamos en compartir consejos y material propio para principiantes en el dibujo.</p>
+      </div>
+    </div>
+
+
+    <section>
+      <h2>titulazo</h2>
+      <div class="slideshow-container carrusel1">
+
+        <div class="mySlides fade">
+          <img src="imgs/img_parallax.wbp">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 'carrusel1')">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 'carrusel1')">&#10095;</a>
+      </div>
+    </section>
+    <br>
+    <section>
+      <h2>titulazo</h2>
+      <div class="slideshow-container carrusel2">
+
+        <div class="mySlides fade">
+          <img src="imgs/img_parallax.wbp">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 'carrusel2')">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 'carrusel2')">&#10095;</a>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <section class="form_coment_section">
+
+      <!-- CONTENEDOR DE COMENTARIOS -->
+      <div class="form_coment_container">
+
+        <!-- Comentario -->
+        <div class="form_coment_card">
+
+          <div class="form_coment_header">
+            <h3 class="form_coment_user">Juan Pérez</h3>
+
+            <div class="form_coment_score">
+              ★★★★☆
+            </div>
+          </div>
+
+          <p class="form_coment_text">
+            Excelente servicio, me gustó mucho la atención.
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- BOTON FASE 1 -->
+      <div class="form_coment_btn_container" id="comentBtnContainer">
+        <button class="form_coment_btn" id="showFormBtn">
+          Agregar comentario
+        </button>
+      </div>
+
+      <!-- FORMULARIO FASE 2 -->
+      <form class="form_coment_form" id="comentForm" style="display: none;">
+
+        <div class="form_coment_field">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" required>
+        </div>
+
+        <div class="form_coment_field">
+          <label for="puntuacion">Puntuación</label>
+
+          <select id="puntuacion" required>
+            <option value="">Selecciona</option>
+            <option value="★☆☆☆☆">1</option>
+            <option value="★★☆☆☆">2</option>
+            <option value="★★★☆☆">3</option>
+            <option value="★★★★☆">4</option>
+            <option value="★★★★★">5</option>
+          </select>
+        </div>
+
+        <div class="form_coment_field">
+          <label for="comentario">Comentario</label>
+
+          <textarea id="comentario" rows="4" required></textarea>
+        </div>
+
+        <button type="submit" class="form_coment_submit">
+          Enviar comentario
+        </button>
+
+      </form>
+
+    </section>
+
+
+
+
+
+
   </main>
+
+  <!--SCRIPTS-->
   <script src="js/navMenu.js"></script>
+  <script src="js/carrusel.js"></script>
+  <script src="js/form_coment.js"></script>
 
 
 
   <footer>
     <img src="icons/LG.svg" alt="Logo">
     <div>
-      <a href="https://www.instagram.com/skeshazone?igsh=MWJ0aDJmYjIwNXBpcQ%3D%3D&utm_source=qr" target="_blank"><img src="icons/Instagram.svg" alt="Instagram"></a>
-      <a href="https://l.instagram.com/?u=https%3A%2F%2Fcara.app%2Fskeshazone%3Futm_source%3Dig%26utm_medium%3Dsocial%26utm_content%3Dlink_in_bio%26fbclid%3DPAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGngGe9zTeQU_tMtJ8FXwUt2iIv3N06iPwpRnspKv-NmLxFdLIEeYXiiAF0JAU_aem_Wd0rx0pUIWtp9bBovXbAEg&e=AUCDE3hIqMh3f91NN2RvLQ09yV2x5kq9et2MrHqRExHpU10nfqjqYCPod4GUOP-gfVxGbFPpJMtrX-NP_JIheH3xHBw6hjlZnsn4DvttGJEd0g6jCa0TXYIxDg" target="_blank"><img src="icons/Cara_icono.svg" alt="Cara"></a>
+      <a href="https://www.instagram.com/skeshazone?igsh=MWJ0aDJmYjIwNXBpcQ%3D%3D&utm_source=qr" target="_blank"><img
+          src="icons/Instagram.svg" alt="Instagram"></a>
+      <a href="https://l.instagram.com/?u=https%3A%2F%2Fcara.app%2Fskeshazone%3Futm_source%3Dig%26utm_medium%3Dsocial%26utm_content%3Dlink_in_bio%26fbclid%3DPAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGngGe9zTeQU_tMtJ8FXwUt2iIv3N06iPwpRnspKv-NmLxFdLIEeYXiiAF0JAU_aem_Wd0rx0pUIWtp9bBovXbAEg&e=AUCDE3hIqMh3f91NN2RvLQ09yV2x5kq9et2MrHqRExHpU10nfqjqYCPod4GUOP-gfVxGbFPpJMtrX-NP_JIheH3xHBw6hjlZnsn4DvttGJEd0g6jCa0TXYIxDg"
+        target="_blank"><img src="icons/Cara_icono.svg" alt="Cara"></a>
     </div>
   </footer>
 </body>
