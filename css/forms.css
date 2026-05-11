@@ -1,0 +1,111 @@
+/*FORMULARIO PARA COMENTARIOS*/
+.form_coment_section {
+  width: 90%;
+  max-width: 800px;
+  margin: 50px auto;
+}
+
+/* TARJETA COMENTARIO */
+.form_coment_card {
+  background: #ffffff;
+
+  border-radius: 12px;
+
+  padding: 20px;
+
+  margin-bottom: 20px;
+
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.form_coment_header {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 10px;
+}
+
+.form_coment_user {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.form_coment_score {
+  color: gold;
+  font-size: 18px;
+}
+
+.form_coment_text {
+  line-height: 1.5;
+}
+
+/* BOTON */
+.form_coment_btn_container {
+  text-align: center;
+}
+
+.form_coment_btn,
+.form_coment_submit {
+  background: #222;
+
+  color: white;
+
+  border: none;
+
+  padding: 12px 20px;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.form_coment_btn:hover,
+.form_coment_submit:hover {
+  background: #444;
+}
+
+/* FORMULARIO */
+.form_coment_form {
+  background: #ffffff;
+
+  padding: 25px;
+
+  border-radius: 12px;
+
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.form_coment_field {
+  display: flex;
+
+  flex-direction: column;
+
+  margin-bottom: 20px;
+}
+
+.form_coment_field label {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.form_coment_field input,
+.form_coment_field select,
+.form_coment_field textarea {
+  padding: 10px;
+
+  border: 1px solid #ccc;
+
+  border-radius: 8px;
+
+  font-size: 16px;
+}
+
+/* OCULTAR */
+.hidden {
+  display: none;
+}

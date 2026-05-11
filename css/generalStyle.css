@@ -9,6 +9,9 @@
 body{
     background-color: var(--cBlanco);
 }
+main p{
+    font-size: 18px;
+}
 
 /*COLORES*/
 :root{
