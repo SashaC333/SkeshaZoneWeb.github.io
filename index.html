@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/footerStyle.css" />
   <link rel="stylesheet" href="css/sectionStyle.css" />
   <link rel="stylesheet" href="css/sectionStyle_carrusel.css">
+  <link rel="stylesheet" href="css/forms.css">
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-179NMFYLCB"></script>
@@ -56,17 +57,24 @@
     <div class="parallax">
       <div class="hero-text">
         <h1>¿Quiénes somos?</h1>
-        <p>Somos un servicio enfocado en la creación de ilustraciones para diferentes medios, como diferentes tipos de portadas, fotos de perfil, hojas de personajes, hasta dibujos simples y bocetos. Además de tener un apartado donde nos enfocamos en compartir consejos y material propio para principiantes en el dibujo.</p>
+        <p>Somos un servicio enfocado en la creación de ilustraciones para diferentes medios, como diferentes tipos de
+          portadas, fotos de perfil, hojas de personajes, hasta dibujos simples y bocetos. Además de tener un apartado
+          donde nos enfocamos en compartir consejos y material propio para principiantes en el dibujo.</p>
       </div>
     </div>
 
 
     <section>
-      <h2>titulazo</h2>
+      <div class="subTitulocont">
+        <h2>Promociones</h2>
+      </div>
       <div class="slideshow-container carrusel1">
 
         <div class="mySlides fade">
-          <img src="imgs/img_parallax.wbp">
+          <img src="imgs/img_parallax.webp">
+        </div>
+        <div class="mySlides fade">
+          <img src="imgs/silverGreenL(f).png">
         </div>
 
         <a class="prev" onclick="plusSlides(-1, 'carrusel1')">&#10094;</a>
@@ -75,11 +83,14 @@
     </section>
     <br>
     <section>
-      <h2>titulazo</h2>
+      <div class="subTitulocont">
+        <h2>Proceso</h2>
+      </div>
+
       <div class="slideshow-container carrusel2">
 
         <div class="mySlides fade">
-          <img src="imgs/img_parallax.wbp">
+          <img src="imgs/img_parallax.webp">
         </div>
 
         <a class="prev" onclick="plusSlides(-1, 'carrusel2')">&#10094;</a>
@@ -88,15 +99,10 @@
     </section>
 
 
-
-
-
-
-
-
-
     <section class="form_coment_section">
-
+      <div class="subTitulocont">
+        <h2>Comentarios</h2>
+      </div>
       <!-- CONTENEDOR DE COMENTARIOS -->
       <div class="form_coment_container">
 
@@ -122,7 +128,7 @@
       <!-- BOTON FASE 1 -->
       <div class="form_coment_btn_container" id="comentBtnContainer">
         <button class="form_coment_btn" id="showFormBtn">
-          Agregar comentario
+          Comentar
         </button>
       </div>
 
@@ -177,12 +183,33 @@
 
   <footer>
     <img src="icons/LG.svg" alt="Logo">
+
+    <div>
+      <!-- SOLO TEXTO -->
+      <span id="abrirPDF">
+        Aviso de Provacidad
+      </span>
+
+      <!-- MODAL -->
+      <div id="miModal" class="modal">
+
+        <!-- BOTON X -->
+        <span class="close">&times;</span>
+
+        <!-- PDF -->
+        <iframe src="imgs/AVISO DE PRIVACIDAD.pdf"></iframe>
+
+      </div>
+    </div>
+
+
     <div>
       <a href="https://www.instagram.com/skeshazone?igsh=MWJ0aDJmYjIwNXBpcQ%3D%3D&utm_source=qr" target="_blank"><img
           src="icons/Instagram.svg" alt="Instagram"></a>
       <a href="https://l.instagram.com/?u=https%3A%2F%2Fcara.app%2Fskeshazone%3Futm_source%3Dig%26utm_medium%3Dsocial%26utm_content%3Dlink_in_bio%26fbclid%3DPAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGngGe9zTeQU_tMtJ8FXwUt2iIv3N06iPwpRnspKv-NmLxFdLIEeYXiiAF0JAU_aem_Wd0rx0pUIWtp9bBovXbAEg&e=AUCDE3hIqMh3f91NN2RvLQ09yV2x5kq9et2MrHqRExHpU10nfqjqYCPod4GUOP-gfVxGbFPpJMtrX-NP_JIheH3xHBw6hjlZnsn4DvttGJEd0g6jCa0TXYIxDg"
         target="_blank"><img src="icons/Cara_icono.svg" alt="Cara"></a>
     </div>
+    <script src="js/cookies.js"></script>
   </footer>
 </body>
 
