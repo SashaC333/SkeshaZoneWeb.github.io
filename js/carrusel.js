@@ -1,10 +1,13 @@
 const slideIndexes = {
   carrusel1: 1,
-  carrusel2: 1
+  carrusel2: 1,
+  carrusel3: 1
 };
 
+// inicializar todos
 showSlides("carrusel1");
 showSlides("carrusel2");
+showSlides("carrusel3");
 
 function plusSlides(n, carrusel) {
   slideIndexes[carrusel] += n;
@@ -15,7 +18,11 @@ function showSlides(carrusel) {
 
   let container = document.querySelector("." + carrusel);
 
+  if (!container) return; // 👈 evita errores si el nombre está mal
+
   let slides = container.getElementsByClassName("mySlides");
+
+  if (slides.length === 0) return;
 
   if (slideIndexes[carrusel] > slides.length) {
     slideIndexes[carrusel] = 1;
