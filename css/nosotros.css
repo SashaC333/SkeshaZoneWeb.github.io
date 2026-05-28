@@ -1,0 +1,181 @@
+/* =========================
+   CONTENEDOR PRINCIPAL
+========================= */
+
+.nosotros_content_nosotros{
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 60px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    box-sizing: border-box;
+}
+
+/* =========================
+   TITULO DE SECCIÓN (SEPARADO, NO AFECTA CARDS)
+========================= */
+
+.nosotros_titulo_seccion{
+    font-size: 2.5rem;
+    text-align: left;
+    color: var(--cNegro);
+
+}
+
+/* =========================
+   CARDS GENERALES
+========================= */
+
+.nosotros_card{
+    background-color: var(--cNegro);
+    border-radius: 15px;
+    padding: 25px;
+
+    box-sizing: border-box;
+}
+
+/* =========================
+   CARD PRINCIPAL
+========================= */
+
+.nosotros_card_principal{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* IMAGEN */
+.nosotros_card_imagen{
+    flex: 1;
+    min-width: 280px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nosotros_card_imagen img{
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+
+    border-radius: 12px;
+
+    object-fit: cover;
+}
+
+/* CONTENIDO DERECHO */
+.nosotros_card_info{
+    flex: 2;
+    min-width: 300px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* TITULO INTERNO DE CARD */
+.nosotros_card_pregunta h2{
+    font-size: 3rem;
+    color: var(--cBlanco);
+}
+
+/* TEXTO */
+.nosotros_card_texto p{
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--cBlanco);
+}
+
+/* =========================
+   CARDS SECUNDARIAS
+========================= */
+
+.nosotros_cards_secundarias{
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.nosotros_card_secundaria{
+    flex: 1;
+    min-width: 280px;
+}
+
+/* TITULOS INTERNOS */
+.nosotros_titulo{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: var(--cBlanco);
+}
+
+/* TEXTOS */
+.nosotros_texto{
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--cBlanco);
+}
+
+/* =========================
+   BOTON
+========================= */
+
+.nosotros_boton_contenedor{
+    display: flex;
+    justify-content: center;
+}
+
+.nosotros_boton_contacto{
+    padding: 15px 30px;
+
+    background-color: var(--cNegro);
+    color: var(--cBlanco);
+
+    text-decoration: none;
+
+    border-radius: 10px;
+
+    transition: 0.3s ease;
+
+    font-weight: bold;
+}
+
+.nosotros_boton_contacto:hover{
+    background-color: var(--cAzul);
+    color: var(--cBlanco);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width: 768px){
+
+    .nosotros_content_nosotros{
+        padding: 30px;
+    }
+
+    .nosotros_card_principal{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nosotros_card_pregunta h2{
+        font-size: 2.2rem;
+    }
+
+    .nosotros_card_info{
+        align-items: center;
+    }
+
+    .nosotros_titulo_seccion{
+        padding: 0 15px;
+    }
+
+}

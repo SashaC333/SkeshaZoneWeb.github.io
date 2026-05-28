@@ -1,0 +1,208 @@
+/* ========================= */
+/* CONTENEDOR PRINCIPAL */
+/* ========================= */
+
+.servicio_content_servicio{
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+
+    padding: 60px;
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.servicio_content_servicio2{
+    width: 100%;
+}
+
+/* ========================= */
+/* TITULOS */
+/* ========================= */
+
+.servicio_titulo_seccion{
+    font-size: 2.5rem;
+    text-align: left;
+    color: var(--cNegro);
+
+    margin-bottom: 10px;
+}
+
+/* ========================= */
+/* CARDS */
+/* ========================= */
+
+.servicio_cards{
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.servicio_card{
+    flex: 1;
+    min-width: 250px;
+    max-width: 420px;
+
+    background-color: var(--cNegro);
+    border-radius: 15px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 20px;
+}
+
+/* CARD GRIS */
+.servicio_card_gris{
+    background-color: var(--cTNegro);
+}
+
+/* CARD PAGO */
+.servicio_pago_contenedor{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.servicio_card_pago{
+    flex: 1;
+    min-width: 250px;
+    max-width: 420px;
+    width: 100%;
+
+    background-color: var(--cNegro);
+    border-radius: 15px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 20px;
+}
+
+/* ========================= */
+/* TITULOS DE CARD */
+/* ========================= */
+
+.servicio_titulo_card{
+    font-size: 1.5rem;
+    color: var(--cAzul);
+}
+
+/* ========================= */
+/* IMAGENES */
+/* ========================= */
+
+.servicio_imagen{
+    width: 100%;
+    aspect-ratio: 1/1;
+    background-color: #cfcfcf;
+    border-radius: 10px;
+
+    object-fit: cover;
+    display: block;
+}
+
+/* ========================= */
+/* PROCESO */
+/* ========================= */
+
+.servicio_proceso{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* ========================= */
+/* DROPDOWNS */
+/* ========================= */
+
+.servicio_dropdown{
+    background-color: var(--cNegro);
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.servicio_dropdown summary{
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--cBlanco);
+}
+
+.servicio_dropdown_contenido{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.servicio_dropdown_contenido p,
+.servicio_dropdown_contenido li{
+    color: var(--cBlanco);
+    line-height: 1.6;
+}
+
+.servicio_dropdown_contenido ul,
+.servicio_dropdown_contenido ol{
+    padding-left: 20px;
+}
+
+/* ========================= */
+/* BOTON */
+/* ========================= */
+
+.servicio_boton_contenedor{
+    display: flex;
+    justify-content: center;
+}
+
+.servicio_boton{
+    padding: 15px 30px;
+    background-color: var(--cNegro);
+    color: var(--cBlanco);
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    font-weight: bold;
+}
+
+.servicio_boton:hover{
+    background-color: var(--cAzul);
+    color: var(--cBlanco);
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media(max-width: 768px){
+
+    .servicio_content_servicio{
+        padding: 30px;
+    }
+
+    .servicio_cards{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .servicio_card{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .servicio_card_pago{
+        width: 100%;
+    }
+
+}
