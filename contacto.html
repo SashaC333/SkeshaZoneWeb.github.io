@@ -53,157 +53,84 @@
   </div>
 
   <main class="main-content">
-    <div class="contact_container">
 
-        <h1 class="contact_title">
-            Contáctanos
-        </h1>
+    <div class="contact_page">
 
-        <form id="contact_form">
+        <h2 class="contacto_titulo_seccion">Contacto</h2>
 
-            <!-- CORREO + USUARIO -->
-            <div class="contact_row">
+        <div class="contact_container">
 
-                <div class="contact_field contact_field_2">
+            <h1 class="contact_title">
+                Contáctanos
+            </h1>
 
-                    <label class="contact_label">
-                        Correo:
-                    </label>
+            <form id="contact_form">
 
-                    <input
-                        type="text"
-                        id="contact_correo"
-                        class="contact_input"
-                        required
-                    >
+                <!-- CORREO + USUARIO -->
+                <div class="contact_row">
 
-                </div>
+                    <div class="contact_field contact_field_2">
+                        <label class="contact_label">Correo:</label>
+                        <input type="text" id="contact_correo" class="contact_input" required>
+                    </div>
 
-                <div class="contact_field contact_field_1">
-
-                    <label class="contact_label">
-                        Usuario:
-                    </label>
-
-                    <input
-                        type="text"
-                        id="contact_usuario"
-                        class="contact_input"
-                        required
-                    >
+                    <div class="contact_field contact_field_1">
+                        <label class="contact_label">Usuario:</label>
+                        <input type="text" id="contact_usuario" class="contact_input" required>
+                    </div>
 
                 </div>
 
-            </div>
+                <!-- GMAIL -->
+                <div class="contact_full">
+                    <label class="contact_label">Gmail:</label>
+                    <input type="email" id="contact_gmail" class="contact_input" required>
+                </div>
 
-            <!-- GMAIL -->
-            <div class="contact_full">
+                <!-- PETICIÓN + SERVICIO -->
+                <div class="contact_row">
 
-                <label class="contact_label">
-                    Gmail:
-                </label>
+                    <div class="contact_field contact_field_2">
+                        <label class="contact_label">Petición:</label>
+                        <input type="text" id="contact_peticion" class="contact_input" required>
+                    </div>
 
-                <input
-                    type="email"
-                    id="contact_gmail"
-                    class="contact_input"
-                    required
-                >
-
-            </div>
-
-            <!-- PETICIÓN + SERVICIO -->
-            <div class="contact_row">
-
-                <div class="contact_field contact_field_2">
-
-                    <label class="contact_label">
-                        Petición:
-                    </label>
-
-                    <input
-                        type="text"
-                        id="contact_peticion"
-                        class="contact_input"
-                        required
-                    >
+                    <div class="contact_field contact_field_1">
+                        <label class="contact_label">Servicio:</label>
+                        <select id="contact_servicio" class="contact_input" required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="Portada">Portada</option>
+                            <option value="Hoja de personaje">Hoja de personaje</option>
+                            <option value="Boceto">Boceto</option>
+                            <option value="Retrato">Retrato</option>
+                        </select>
+                    </div>
 
                 </div>
 
-                <div class="contact_field contact_field_1">
-
-                    <label class="contact_label">
-                        Servicio:
-                    </label>
-
-                    <select
-                        id="contact_servicio"
-                        class="contact_input"
-                        required
-                    >
-                        <option value="">
-                            Selecciona una opción
-                        </option>
-
-                        <option value="Portada">
-                            Portada
-                        </option>
-
-                        <option value="Hoja de personaje">
-                            Hoja de personaje
-                        </option>
-
-                        <option value="Boceto">
-                            Boceto
-                        </option>
-
-                        <option value="Retrato">
-                            Retrato
-                        </option>
-
-                    </select>
-
+                <!-- DESCRIPCIÓN -->
+                <div class="contact_full">
+                    <label class="contact_label">Descripción:</label>
+                    <textarea id="contact_descripcion" class="contact_textarea" rows="6" required></textarea>
                 </div>
 
-            </div>
+                <!-- BOTÓN -->
+                <button type="submit" class="contact_button" id="contact_button">
+                    Enviar
+                </button>
 
-            <!-- DESCRIPCIÓN -->
-            <div class="contact_full">
+                <!-- MENSAJE -->
+                <p class="contact_message" id="contact_message"></p>
 
-                <label class="contact_label">
-                    Descripción:
-                </label>
+            </form>
 
-                <textarea
-                    id="contact_descripcion"
-                    class="contact_textarea"
-                    rows="6"
-                    required
-                ></textarea>
-
-            </div>
-
-            <!-- BOTÓN -->
-            <button
-                type="submit"
-                class="contact_button"
-                id="contact_button"
-            >
-                Enviar
-            </button>
-
-            <!-- MENSAJE -->
-            <p
-                class="contact_message"
-                id="contact_message"
-            ></p>
-
-        </form>
+        </div>
 
     </div>
 
     <script src="js/contact.js"></script>
-  </main>
+
+</main>
   <script src="js/navMenu.js"></script>
 
 

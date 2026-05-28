@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nosotros</title> <link rel="stylesheet" href="css/generalStyle.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nosotros</title>
+  <link rel="stylesheet" href="css/generalStyle.css" />
   <link rel="stylesheet" href="css/headerStyle.css" />
   <link rel="stylesheet" href="css/footerStyle.css" />
   <link rel="stylesheet" href="css/sectionStyle.css" />
+  <link rel="stylesheet" href="css/nosotros.css">
 
 
 </head>
@@ -14,7 +17,7 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-179NMFYLCB"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag() { dataLayer.push(arguments); }
   gtag('js', new Date());
 
   gtag('config', 'G-179NMFYLCB');
@@ -53,23 +56,117 @@
   </div>
 
   <main class="main-content">
-    <p>Nosotros</p>
 
+    <section class="nosotros_content_nosotros">
 
+      <!-- Titulo -->
+       <h2 class="nosotros_titulo_seccion">Nosotros</h2>
+       
+      <!-- Card principal -->
+      <div class="nosotros_card nosotros_card_principal">
 
+        <!-- IMAGEN -->
+        <div class="nosotros_card_imagen">
+          <img src="img/tu-imagen.jpg" alt="Nosotros">
+        </div>
 
-    
+        <!-- CONTENIDO DERECHO -->
+        <div class="nosotros_card_info">
+
+          <!-- TITULO -->
+          <div class="nosotros_card_pregunta">
+            <h2>¿Quiénes somos?</h2>
+          </div>
+
+          <!-- TEXTO -->
+          <div class="nosotros_card_texto">
+            <p>
+              Somos un servicio enfocado en la creación de ilustraciones para diferentes medios,
+              como diferentes tipos de portadas, fotos de perfil, hojas de personajes,
+              hasta dibujos simples y bocetos. Además de tener un apartado donde nos enfocamos
+              en compartir consejos y material propio para principiantes en el dibujo.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- CONTENEDOR MISIÓN Y VISIÓN -->
+      <div class="nosotros_cards_secundarias">
+
+        <!-- MISIÓN -->
+        <div class="nosotros_card nosotros_card_secundaria">
+
+          <h3 class="nosotros_titulo">Misión</h3>
+
+          <p class="nosotros_texto">
+            Compartir técnicas y trucos que he aprendido a lo largo de mi vida,
+            para así ayudar a aquellos que creen que no pueden o quieren aprender a dibujar.
+          </p>
+
+        </div>
+
+        <!-- VISIÓN -->
+        <div class="nosotros_card nosotros_card_secundaria">
+
+          <h3 class="nosotros_titulo">Visión</h3>
+
+          <p class="nosotros_texto">
+            Tener una plataforma con material útil, sencillo y que estudiantes
+            sin experiencia para que puedan tener conocimiento básico.
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- BOTÓN -->
+      <div class="nosotros_boton_contenedor">
+
+        <a href="contacto.html" class="nosotros_boton_contacto">
+          Ir a contacto
+        </a>
+
+      </div>
+
+    </section>
+
   </main>
+
   <script src="js/navMenu.js"></script>
 
 
 
   <footer>
     <img src="icons/LG.svg" alt="Logo">
+
     <div>
-      <a href="https://www.instagram.com/skeshazone?igsh=MWJ0aDJmYjIwNXBpcQ%3D%3D&utm_source=qr" target="_blank"><img src="icons/Instagram.svg" alt="Instagram"></a>
-      <a href="https://l.instagram.com/?u=https%3A%2F%2Fcara.app%2Fskeshazone%3Futm_source%3Dig%26utm_medium%3Dsocial%26utm_content%3Dlink_in_bio%26fbclid%3DPAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGngGe9zTeQU_tMtJ8FXwUt2iIv3N06iPwpRnspKv-NmLxFdLIEeYXiiAF0JAU_aem_Wd0rx0pUIWtp9bBovXbAEg&e=AUCDE3hIqMh3f91NN2RvLQ09yV2x5kq9et2MrHqRExHpU10nfqjqYCPod4GUOP-gfVxGbFPpJMtrX-NP_JIheH3xHBw6hjlZnsn4DvttGJEd0g6jCa0TXYIxDg" target="_blank"><img src="icons/Cara_icono.svg" alt="Cara"></a>
+      <!-- SOLO TEXTO -->
+      <span id="abrirPDF">
+        Aviso de Provacidad
+      </span>
+
+      <!-- MODAL -->
+      <div id="miModal" class="modal">
+
+        <!-- BOTON X -->
+        <span class="close">&times;</span>
+
+        <!-- PDF -->
+        <iframe src="imgs/AVISO DE PRIVACIDAD.pdf"></iframe>
+
+      </div>
     </div>
+
+
+    <div>
+      <a href="https://www.instagram.com/skeshazone?igsh=MWJ0aDJmYjIwNXBpcQ%3D%3D&utm_source=qr" target="_blank"><img
+          src="icons/Instagram.svg" alt="Instagram"></a>
+      <a href="https://l.instagram.com/?u=https%3A%2F%2Fcara.app%2Fskeshazone%3Futm_source%3Dig%26utm_medium%3Dsocial%26utm_content%3Dlink_in_bio%26fbclid%3DPAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGngGe9zTeQU_tMtJ8FXwUt2iIv3N06iPwpRnspKv-NmLxFdLIEeYXiiAF0JAU_aem_Wd0rx0pUIWtp9bBovXbAEg&e=AUCDE3hIqMh3f91NN2RvLQ09yV2x5kq9et2MrHqRExHpU10nfqjqYCPod4GUOP-gfVxGbFPpJMtrX-NP_JIheH3xHBw6hjlZnsn4DvttGJEd0g6jCa0TXYIxDg"
+        target="_blank"><img src="icons/Cara_icono.svg" alt="Cara"></a>
+    </div>
+    <script src="js/cookies.js"></script>
   </footer>
 </body>
 
