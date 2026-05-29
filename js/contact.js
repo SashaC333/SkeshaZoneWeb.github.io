@@ -1,76 +1,63 @@
-// INICIALIZAR EMAILJS
-emailjs.init("TU_PUBLIC_KEY");
+// =========================
+// ELEMENTOS
+// =========================
 
-const contact_form =
-document.getElementById("contact_form");
+const contact_form = document.getElementById("contact_form");
+const contact_message = document.getElementById("contact_message");
+const contact_button = document.getElementById("contact_button");
 
-const contact_message =
-document.getElementById("contact_message");
+// =========================
+// ENVIAR FORMULARIO
+// =========================
 
-const contact_button =
-document.getElementById("contact_button");
+contact_form.addEventListener("submit", function (e) {
+  e.preventDefault();
 
-contact_form.addEventListener("submit", function(e){
+  // VALIDACIÓN BÁSICA
+  if (!contact_form.checkValidity()) return;
 
-    e.preventDefault();
+  // BOTÓN EN ESTADO LOADING
+  contact_button.disabled = true;
+  contact_button.innerText = "Enviando...";
 
-    contact_button.disabled = true;
-    contact_button.innerText = "Enviando...";
+  // DATOS PARA EMAILJS
+  const templateParams = {
+    nombre: document.getElementById("contact_nombre").value,
+    usuario: document.getElementById("contact_usuario").value,
+    gmail: document.getElementById("contact_gmail").value,
+    peticion: document.getElementById("contact_peticion").value,
+    servicio: document.getElementById("contact_servicio").value,
+    descripcion: document.getElementById("contact_descripcion").value
+  };
 
-    const templateParams = {
+  // ENVIAR EMAIL
+  emailjs.send(
+    "service_pzelt9u",
+    "template_oq14tde",
+    templateParams
+  )
+  .then(function (response) {
 
-        correo:
-        document.getElementById("contact_correo").value,
+    contact_message.innerText = "¡Mensaje enviado correctamente!";
+    contact_message.className = "contact_message contact_success";
 
-        usuario:
-        document.getElementById("contact_usuario").value,
+    contact_form.reset();
 
-        gmail:
-        document.getElementById("contact_gmail").value,
+    console.log("SUCCESS:", response);
 
-        peticion:
-        document.getElementById("contact_peticion").value,
+  })
+  .catch(function (error) {
 
-        servicio:
-        document.getElementById("contact_servicio").value,
+    contact_message.innerText = "Ocurrió un error al enviar.";
+    contact_message.className = "contact_message contact_error";
 
-        descripcion:
-        document.getElementById("contact_descripcion").value
+    console.log("ERROR:", error);
 
-    };
+  })
+  .finally(function () {
 
-    emailjs.send(
-        "TU_SERVICE_ID",
-        "TU_TEMPLATE_ID",
-        templateParams
-    )
-    .then(function(){
+    contact_button.disabled = false;
+    contact_button.innerText = "Enviar";
 
-        contact_message.innerText =
-        "¡Mensaje enviado correctamente!";
-
-        contact_message.className =
-        "contact_message contact_success";
-
-        contact_form.reset();
-
-    })
-    .catch(function(error){
-
-        contact_message.innerText =
-        "Ocurrió un error al enviar.";
-
-        contact_message.className =
-        "contact_message contact_error";
-
-        console.log(error);
-
-    })
-    .finally(function(){
-
-        contact_button.disabled = false;
-        contact_button.innerText = "Enviar";
-
-    });
-
+  });
 });
