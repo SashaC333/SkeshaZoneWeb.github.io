@@ -1,34 +1,28 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title> <link rel="stylesheet" href="css/generalStyle.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+
+  <link rel="stylesheet" href="css/generalStyle.css" />
   <link rel="stylesheet" href="css/headerStyle.css" />
   <link rel="stylesheet" href="css/footerStyle.css" />
   <link rel="stylesheet" href="css/forms.css">
-
-
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-179NMFYLCB"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-179NMFYLCB');
-</script>
 
 <body>
+
   <header class="header">
     <nav class="nav">
-      <!-- logotipo -->
-      <div class="nav__logo">
-        <img src="icons/LG.svg" alt="Logo" class="nav__img" />
+
+      <div class="nav__logo" id="start">
+        <a href="index.html">
+          <img src="icons/LG.svg" alt="Logo">
+        </a>
       </div>
 
-      <!-- -->
       <ul class="nav__list">
         <li><a href="index.html" class="nav__link">Inicio</a></li>
         <li><a href="servicios.html" class="nav__link">Servicios</a></li>
@@ -36,112 +30,110 @@
         <li><a href="contacto.html" class="nav__link">Contacto</a></li>
       </ul>
 
-      <!-- burger -->
-      <button class="nav__toggler" id="navToggler" aria-label="Menú">
-        <img src="icons/menu.svg" alt="Menú" class="nav__toggler-img" />
+      <button class="nav__toggler" id="navToggler">
+        <img src="icons/menu.svg" alt="Menú">
       </button>
+
     </nav>
   </header>
 
-  <!-- Sidepanel colapsable a la derecha (móvil) -->
+  <!-- SIDE MENU -->
   <div class="sidepanel" id="mySidepanel">
-    <a href="javascript:void(0)" class="sidepanel__close" id="sidepanelClose">&times;</a>
-    <a href="index.html" class="sidepanel__link">Inicio</a>
-    <a href="servicios.html" class="sidepanel__link">Servicios</a>
-    <a href="nosotros.html" class="sidepanel__link">Nosotros</a>
-    <a href="contacto.html" class="sidepanel__link">Contacto</a>
+    <a href="javascript:void(0)" id="sidepanelClose">&times;</a>
+    <a href="index.html">Inicio</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="nosotros.html">Nosotros</a>
+    <a href="contacto.html">Contacto</a>
   </div>
 
   <main class="main-content">
 
     <div class="contact_page">
 
+      <div class="contact_card_page">
+
         <h2 class="contacto_titulo_seccion">Contacto</h2>
 
         <div class="contact_container">
 
-            <h1 class="contact_title">
-                Contáctanos
-            </h1>
+          <h1 class="contact_title">Contáctanos</h1>
 
-            <form id="contact_form">
+          <form id="contact_form">
 
-                <!-- CORREO + USUARIO -->
-                <div class="contact_row">
+            <!-- NOMBRE + USUARIO -->
+            <div class="contact_row">
 
-                    <div class="contact_field contact_field_2">
-                        <label class="contact_label">Correo:</label>
-                        <input type="text" id="contact_correo" class="contact_input" required>
-                    </div>
+              <div class="contact_field contact_field_2">
+                <label class="contact_label">Nombre:</label>
+                <input type="text" id="contact_nombre" name="nombre" class="contact_input" required>
+              </div>
 
-                    <div class="contact_field contact_field_1">
-                        <label class="contact_label">Usuario:</label>
-                        <input type="text" id="contact_usuario" class="contact_input" required>
-                    </div>
+              <div class="contact_field contact_field_1">
+                <label class="contact_label">Usuario / Red social:</label>
+                <input type="text" id="contact_usuario" name="usuario" class="contact_input" required>
+              </div>
 
-                </div>
+            </div>
 
-                <!-- GMAIL -->
-                <div class="contact_full">
-                    <label class="contact_label">Gmail:</label>
-                    <input type="email" id="contact_gmail" class="contact_input" required>
-                </div>
+            <!-- CORREO -->
+            <div class="contact_full">
+              <label class="contact_label">Correo electrónico:</label>
+              <input type="email" id="contact_gmail" name="gmail" class="contact_input" required>
+            </div>
 
-                <!-- PETICIÓN + SERVICIO -->
-                <div class="contact_row">
+            <!-- TITULO + SERVICIO -->
+            <div class="contact_row">
 
-                    <div class="contact_field contact_field_2">
-                        <label class="contact_label">Petición:</label>
-                        <input type="text" id="contact_peticion" class="contact_input" required>
-                    </div>
+              <div class="contact_field contact_field_2">
+                <label class="contact_label">Título de solicitud:</label>
+                <input type="text" id="contact_peticion" name="peticion" class="contact_input" required>
+              </div>
 
-                    <div class="contact_field contact_field_1">
-                        <label class="contact_label">Servicio:</label>
-                        <select id="contact_servicio" class="contact_input" required>
-                            <option value="">Selecciona una opción</option>
-                            <option value="Portada">Portada</option>
-                            <option value="Hoja de personaje">Hoja de personaje</option>
-                            <option value="Boceto">Boceto</option>
-                            <option value="Retrato">Retrato</option>
-                        </select>
-                    </div>
+              <div class="contact_field contact_field_1">
+                <label class="contact_label">Servicio:</label>
+                <select id="contact_servicio" name="servicio" class="contact_input" required>
+                  <option value="">Selecciona una opción</option>
+                  <option value="Portada">Portada</option>
+                  <option value="Hoja de personaje">Hoja de personaje</option>
+                  <option value="Boceto">Boceto</option>
+                  <option value="Retrato">Retrato</option>
+                </select>
+              </div>
 
-                </div>
+            </div>
 
-                <!-- DESCRIPCIÓN -->
-                <div class="contact_full">
-                    <label class="contact_label">Descripción:</label>
-                    <textarea id="contact_descripcion" class="contact_textarea" rows="6" required></textarea>
-                </div>
+            <!-- DESCRIPCIÓN -->
+            <div class="contact_full">
+              <label class="contact_label">Descripción:</label>
+              <textarea id="contact_descripcion" name="descripcion" class="contact_textarea" rows="6" required></textarea>
+            </div>
 
-                <!-- BOTÓN -->
-                <button type="submit" class="contact_button" id="contact_button">
-                    Enviar
-                </button>
+            <button type="submit" class="contact_button" id="contact_button">
+              Enviar
+            </button>
 
-                <!-- MENSAJE -->
-                <p class="contact_message" id="contact_message"></p>
+            <p class="contact_message" id="contact_message"></p>
 
-            </form>
+          </form>
 
         </div>
 
+      </div>
+
     </div>
 
-    <script src="js/contact.js"></script>
+  </main>
 
-</main>
-  <script src="js/navMenu.js"></script>
+  <!-- EMAILJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
+  <script>
+    emailjs.init({
+      publicKey: "a03-u9mtEyj-2rDAV"
+    });
+  </script>
 
+  <script src="js/contact.js"></script>
 
-  <footer>
-    <img src="icons/LG.svg" alt="Logo">
-    <div>
-      <a href="https://www.instagram.com/skeshazone?igsh=MWJ0aDJmYjIwNXBpcQ%3D%3D&utm_source=qr" target="_blank"><img src="icons/Instagram.svg" alt="Instagram"></a>
-      <a href="https://l.instagram.com/?u=https%3A%2F%2Fcara.app%2Fskeshazone%3Futm_source%3Dig%26utm_medium%3Dsocial%26utm_content%3Dlink_in_bio%26fbclid%3DPAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGngGe9zTeQU_tMtJ8FXwUt2iIv3N06iPwpRnspKv-NmLxFdLIEeYXiiAF0JAU_aem_Wd0rx0pUIWtp9bBovXbAEg&e=AUCDE3hIqMh3f91NN2RvLQ09yV2x5kq9et2MrHqRExHpU10nfqjqYCPod4GUOP-gfVxGbFPpJMtrX-NP_JIheH3xHBw6hjlZnsn4DvttGJEd0g6jCa0TXYIxDg" target="_blank"><img src="icons/Cara_icono.svg" alt="Cara"></a>
-    </div>
-  </footer>
 </body>
-
 </html>

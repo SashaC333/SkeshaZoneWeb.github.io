@@ -1,421 +1,435 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios</title> <link rel="stylesheet" href="css/generalStyle.css" />
-  <link rel="stylesheet" href="css/headerStyle.css" />
-  <link rel="stylesheet" href="css/footerStyle.css" />
-  <link rel="stylesheet" href="css/sectionStyle.css" />
-  <link rel="stylesheet" href="css/servicios.css">
+    <title>Servicios</title>
+    <link rel="stylesheet" href="css/generalStyle.css" />
+    <link rel="stylesheet" href="css/headerStyle.css" />
+    <link rel="stylesheet" href="css/footerStyle.css" />
+    <link rel="stylesheet" href="css/sectionStyle.css" />
+    <link rel="stylesheet" href="css/servicios.css">
 
 
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-179NMFYLCB"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-179NMFYLCB');
+    gtag('config', 'G-179NMFYLCB');
 </script>
 
 <body>
-  <header class="header">
-    <nav class="nav">
-      <!-- logotipo -->
-      <div class="nav__logo">
-        <img src="icons/LG.svg" alt="Logo" class="nav__img" />
-      </div>
-
-      <!-- -->
-      <ul class="nav__list">
-        <li><a href="index.html" class="nav__link">Inicio</a></li>
-        <li><a href="servicios.html" class="nav__link">Servicios</a></li>
-        <li><a href="nosotros.html" class="nav__link">Nosotros</a></li>
-        <li><a href="contacto.html" class="nav__link">Contacto</a></li>
-      </ul>
-
-      <!-- burger -->
-      <button class="nav__toggler" id="navToggler" aria-label="Menú">
-        <img src="icons/menu.svg" alt="Menú" class="nav__toggler-img" />
-      </button>
-    </nav>
-  </header>
-
-  <!-- Sidepanel colapsable a la derecha (móvil) -->
-  <div class="sidepanel" id="mySidepanel">
-    <a href="javascript:void(0)" class="sidepanel__close" id="sidepanelClose">&times;</a>
-    <a href="index.html" class="sidepanel__link">Inicio</a>
-    <a href="servicios.html" class="sidepanel__link">Servicios</a>
-    <a href="nosotros.html" class="sidepanel__link">Nosotros</a>
-    <a href="contacto.html" class="sidepanel__link">Contacto</a>
-  </div>
-
-  <main class="main-content">
-    <section class="servicio_content_servicio">
-
-    <!-- ========================= -->
-    <!-- SERVICIOS -->
-    <!-- ========================= -->
-
-    <h2 class="servicio_titulo_seccion">Servicios</h2>
-
-    <div class="servicio_cards">
-
-        <!-- Comisiones -->
-        <div class="servicio_card">
-
-            <h3 class="servicio_titulo_card">
-                Comisiones
-            </h3>
-
-            <div class="servicio_imagen">
-                <!-- Imagen -->
+    <header class="header" id="start">
+        <nav class="nav">
+            <!-- logotipo -->
+            <div class="nav__logo">
+                <a href="index.html">
+                    <img src="icons/LG.svg" alt="Logo">
+                </a>
             </div>
 
-        </div>
+            <!-- -->
+            <ul class="nav__list">
+                <li><a href="index.html" class="nav__link">Inicio</a></li>
+                <li><a href="servicios.html" class="nav__link">Servicios</a></li>
+                <li><a href="nosotros.html" class="nav__link">Nosotros</a></li>
+                <li><a href="contacto.html" class="nav__link">Contacto</a></li>
+            </ul>
 
-        <!-- Tutoriales -->
-        <div class="servicio_card">
+            <!-- burger -->
+            <button class="nav__toggler" id="navToggler" aria-label="Menú">
+                <img src="icons/menu.svg" alt="Menú" class="nav__toggler-img" />
+            </button>
+        </nav>
+    </header>
 
-            <h3 class="servicio_titulo_card">
-                Tutoriales
-            </h3>
-
-            <div class="servicio_imagen">
-                <!-- Imagen -->
-            </div>
-
-        </div>
-
-        <!-- Asesoria -->
-        <div class="servicio_card servicio_card_gris">
-
-            <h3 class="servicio_titulo_card">
-                Asesoría
-            </h3>
-
-            <div class="servicio_imagen">
-                <!-- Imagen -->
-            </div>
-
-        </div>
-
+    <!-- Sidepanel colapsable a la derecha (móvil) -->
+    <div class="sidepanel" id="mySidepanel">
+        <a href="javascript:void(0)" class="sidepanel__close" id="sidepanelClose">&times;</a>
+        <a href="index.html" class="sidepanel__link">Inicio</a>
+        <a href="servicios.html" class="sidepanel__link">Servicios</a>
+        <a href="nosotros.html" class="sidepanel__link">Nosotros</a>
+        <a href="contacto.html" class="sidepanel__link">Contacto</a>
     </div>
 
-    <!-- ========================= -->
-    <!-- METODO DE PAGO -->
-    <!-- ========================= -->
+    <main class="main-content">
+        <section class="servicio_content_servicio">
 
-    <h2 class="servicio_titulo_seccion">
-        Método de pago
-    </h2>
+            <!-- ========================= -->
+            <!-- SERVICIOS -->
+            <!-- ========================= -->
 
-    <div class="servicio_pago_contenedor">
+            <h2 class="servicio_titulo_seccion">Servicios</h2>
 
-        <div class="servicio_card servicio_card_pago">
+            <div class="servicio_cards">
 
-            <div class="servicio_imagen">
-                <!-- Imagen -->
-            </div>
+                <!-- Comisiones -->
+                <div class="servicio_card">
 
-        </div>
+                    <h3 class="servicio_titulo_card">
+                        Comisiones
+                    </h3>
 
-    </div>
+                    <div class="servicio_imagen">
+                        <!-- Imagen -->
+                        <img src="imgs/25-11-23_LeoNightwing(f).png" alt="Comisiones">
+                    </div>
 
-    <!-- ========================= -->
-    <!-- PROCESO DE TRABAJO -->
-    <!-- ========================= -->
+                </div>
 
-    <h2 class="servicio_titulo_seccion">
-        Proceso de trabajo
-    </h2>
+                <!-- Tutoriales -->
+                <div class="servicio_card">
 
-    <div class="servicio_proceso">
+                    <h3 class="servicio_titulo_card">
+                        Tutoriales
+                    </h3>
 
-        <!-- 1 -->
-        <details class="servicio_dropdown">
+                    <div class="servicio_imagen">
+                        <!-- Imagen -->
+                        <img src="imgs/InstaShot.png" alt="Tutoriales">
+                    </div>
 
-            <summary>
-                1. Enviar solicitud
-            </summary>
+                </div>
 
-            <div class="servicio_dropdown_contenido">
+                <!-- Asesoria 
+                <div class="servicio_card servicio_card_gris">
 
-                <p>
-                    Para pedir una comisión, dirígete a la pestaña de Contacto y completa el formulario con:
-                </p>
+                    <h3 class="servicio_titulo_card">
+                        Asesoría
+                    </h3>
 
-                <ul>
-                    <li>Correo electrónico</li>
-                    <li>Usuario de Instagram</li>
-                    <li>Temática de la petición</li>
-                    <li>Tipo de servicio</li>
-                    <li>Breve descripción</li>
-                </ul>
-
-            </div>
-
-        </details>
-
-        <!-- 2 -->
-        <details class="servicio_dropdown">
-
-            <summary>
-                2. Espera de respuesta
-            </summary>
-
-            <div class="servicio_dropdown_contenido">
-
-                <p>
-                    Recibirás una respuesta por correo en unos días.
-                </p>
-
-                <ul>
-                    <li>✓ Aceptada</li>
-                    <li>✗ Rechazada</li>
-                </ul>
+                    <div class="servicio_imagen">
+                        
+                    </div>
+                    
+                </div>-->
 
             </div>
 
-        </details>
+            <!-- ========================= -->
+            <!-- METODO DE PAGO -->
+            <!-- ========================= -->
 
-        <!-- 3 -->
-        <details class="servicio_dropdown">
+            <h2 class="servicio_titulo_seccion">
+                Método de pago
+            </h2>
+            <div class="servicio_cards">
+                <div class="servicio_card servicio_card">
 
-            <summary>
-                3. Discusión de detalles
-            </summary>
+                    <h3 class="servicio_titulo_card">
+                        Transferencia
+                    </h3>
 
-            <div class="servicio_dropdown_contenido">
+                    <div class="servicio_imagen">
+                        <img src="icons/credit-card-outline.svg" alt="Transferencia">
+                    </div>
 
-                <ul>
-                    <li>Referencias visuales</li>
-                    <li>Ideas y conceptos</li>
-                    <li>Tabla de precios</li>
-                    <li>Tipo de acabado</li>
-                    <li>Fecha de entrega</li>
-                </ul>
+                </div>
+            </div>
+
+            <!-- ========================= -->
+            <!-- PROCESO DE TRABAJO -->
+            <!-- ========================= -->
+
+            <h2 class="servicio_titulo_seccion">
+                Proceso de trabajo
+            </h2>
+
+            <div class="servicio_proceso">
+
+                <!-- 1 -->
+                <details class="servicio_dropdown">
+
+                    <summary>
+                        1. Enviar solicitud
+                    </summary>
+
+                    <div class="servicio_dropdown_contenido">
+
+                        <p>
+                            Para pedir una comisión, dirígete a la pestaña de Contacto y completa el formulario con:
+                        </p>
+
+                        <ul>
+                            <li>Correo electrónico</li>
+                            <li>Usuario de Instagram</li>
+                            <li>Temática de la petición</li>
+                            <li>Tipo de servicio</li>
+                            <li>Breve descripción</li>
+                        </ul>
+
+                    </div>
+
+                </details>
+
+                <!-- 2 -->
+                <details class="servicio_dropdown">
+
+                    <summary>
+                        2. Espera de respuesta
+                    </summary>
+
+                    <div class="servicio_dropdown_contenido">
+
+                        <p>
+                            Recibirás una respuesta por correo en unos días.
+                        </p>
+
+                        <ul>
+                            <li>✓ Aceptada</li>
+                            <li>✗ Rechazada</li>
+                        </ul>
+
+                    </div>
+
+                </details>
+
+                <!-- 3 -->
+                <details class="servicio_dropdown">
+
+                    <summary>
+                        3. Discusión de detalles
+                    </summary>
+
+                    <div class="servicio_dropdown_contenido">
+
+                        <ul>
+                            <li>Referencias visuales</li>
+                            <li>Ideas y conceptos</li>
+                            <li>Tabla de precios</li>
+                            <li>Tipo de acabado</li>
+                            <li>Fecha de entrega</li>
+                        </ul>
+
+                    </div>
+
+                </details>
+
+                <!-- 4 -->
+                <details class="servicio_dropdown">
+
+                    <summary>
+                        4. Pago inicial
+                    </summary>
+
+                    <div class="servicio_dropdown_contenido">
+
+                        <p>
+                            Se requiere un pago inicial del 50%.
+                        </p>
+
+                        <h4>Métodos aceptados:</h4>
+
+                        <ul>
+                            <li>Transferencia bancaria</li>
+                            <li>PayPal</li>
+                        </ul>
+
+                    </div>
+
+                </details>
+
+                <!-- 5 -->
+                <details class="servicio_dropdown">
+
+                    <summary>
+                        5. Proceso de trabajo y cambios
+                    </summary>
+
+                    <div class="servicio_dropdown_contenido">
+
+                        <ul>
+                            <li>Cambios solo en la etapa actual</li>
+                            <li>No volver a etapas anteriores</li>
+                            <li>Máximo 3 cambios grandes</li>
+                        </ul>
+
+                    </div>
+
+                </details>
+
+                <!-- 6 -->
+                <details class="servicio_dropdown">
+
+                    <summary>
+                        6. Entrega final
+                    </summary>
+
+                    <div class="servicio_dropdown_contenido">
+
+                        <ol>
+                            <li>Completar el pago restante</li>
+                            <li>Enviar archivo final</li>
+                        </ol>
+
+                    </div>
+
+                </details>
 
             </div>
 
-        </details>
+            <!-- ========================= -->
+            <!-- INFORMACION IMPORTANTE -->
+            <!-- ========================= -->
 
-        <!-- 4 -->
-        <details class="servicio_dropdown">
+            <h2 class="servicio_titulo_seccion">
+                Información importante
+            </h2>
 
-            <summary>
-                4. Pago inicial
-            </summary>
+            <div class="servicio_proceso">
 
-            <div class="servicio_dropdown_contenido">
+                <details class="servicio_dropdown">
 
-                <p>
-                    Se requiere un pago inicial del 50%.
-                </p>
+                    <summary>
+                        Tiempo de entrega
+                    </summary>
 
-                <h4>Métodos aceptados:</h4>
+                    <div class="servicio_dropdown_contenido">
 
-                <ul>
-                    <li>Transferencia bancaria</li>
-                    <li>PayPal</li>
-                </ul>
+                        <ul>
+                            <li>Complejidad del dibujo</li>
+                            <li>Cantidad de detalles</li>
+                            <li>Comisiones en cola</li>
+                        </ul>
 
-            </div>
+                    </div>
 
-        </details>
+                </details>
 
-        <!-- 5 -->
-        <details class="servicio_dropdown">
+                <details class="servicio_dropdown">
 
-            <summary>
-                5. Proceso de trabajo y cambios
-            </summary>
+                    <summary>
+                        Lo que dibujo
+                    </summary>
 
-            <div class="servicio_dropdown_contenido">
+                    <div class="servicio_dropdown_contenido">
 
-                <ul>
-                    <li>Cambios solo en la etapa actual</li>
-                    <li>No volver a etapas anteriores</li>
-                    <li>Máximo 3 cambios grandes</li>
-                </ul>
+                        <ul>
+                            <li>Fanarts</li>
+                            <li>OCs</li>
+                            <li>Parejas</li>
+                            <li>Ilustraciones simples</li>
+                        </ul>
 
-            </div>
+                    </div>
 
-        </details>
+                </details>
 
-        <!-- 6 -->
-        <details class="servicio_dropdown">
+                <details class="servicio_dropdown">
 
-            <summary>
-                6. Entrega final
-            </summary>
+                    <summary>
+                        Lo que NO dibujo
+                    </summary>
 
-            <div class="servicio_dropdown_contenido">
+                    <div class="servicio_dropdown_contenido">
 
-                <ol>
-                    <li>Completar el pago restante</li>
-                    <li>Enviar archivo final</li>
-                </ol>
+                        <ul>
+                            <li>NSFW extremo</li>
+                            <li>Gore excesivo</li>
+                            <li>Mecha complejo</li>
+                            <li>Contenido ofensivo</li>
+                        </ul>
 
-            </div>
+                    </div>
 
-        </details>
+                </details>
 
-    </div>
+                <details class="servicio_dropdown">
 
-    <!-- ========================= -->
-    <!-- INFORMACION IMPORTANTE -->
-    <!-- ========================= -->
+                    <summary>
+                        Uso de la comisión
+                    </summary>
 
-    <h2 class="servicio_titulo_seccion">
-        Información importante
-    </h2>
+                    <div class="servicio_dropdown_contenido">
 
-    <div class="servicio_proceso">
+                        <p>
+                            Las comisiones son para uso personal,
+                            salvo acuerdo comercial previo.
+                        </p>
 
-        <details class="servicio_dropdown">
+                    </div>
 
-            <summary>
-                Tiempo de entrega
-            </summary>
+                </details>
 
-            <div class="servicio_dropdown_contenido">
+                <details class="servicio_dropdown">
 
-                <ul>
-                    <li>Complejidad del dibujo</li>
-                    <li>Cantidad de detalles</li>
-                    <li>Comisiones en cola</li>
-                </ul>
+                    <summary>
+                        Derecho de rechazo
+                    </summary>
 
-            </div>
+                    <div class="servicio_dropdown_contenido">
 
-        </details>
+                        <p>
+                            El artista puede rechazar solicitudes
+                            por disponibilidad o comodidad.
+                        </p>
 
-        <details class="servicio_dropdown">
+                    </div>
 
-            <summary>
-                Lo que dibujo
-            </summary>
-
-            <div class="servicio_dropdown_contenido">
-
-                <ul>
-                    <li>Fanarts</li>
-                    <li>OCs</li>
-                    <li>Parejas</li>
-                    <li>Ilustraciones simples</li>
-                </ul>
+                </details>
 
             </div>
 
-        </details>
+            <!-- ========================= -->
+            <!-- BOTON -->
+            <!-- ========================= -->
 
-        <details class="servicio_dropdown">
+            <div class="servicio_boton_contenedor">
 
-            <summary>
-                Lo que NO dibujo
-            </summary>
-
-            <div class="servicio_dropdown_contenido">
-
-                <ul>
-                    <li>NSFW extremo</li>
-                    <li>Gore excesivo</li>
-                    <li>Mecha complejo</li>
-                    <li>Contenido ofensivo</li>
-                </ul>
+                <a href="contacto.html" class="servicio_boton">
+                    Ir a contacto
+                </a>
 
             </div>
 
-        </details>
+        </section>
+    </main>
+    <script src="js/navMenu.js"></script>
 
-        <details class="servicio_dropdown">
 
-            <summary>
-                Uso de la comisión
-            </summary>
 
-            <div class="servicio_dropdown_contenido">
-
-                <p>
-                    Las comisiones son para uso personal,
-                    salvo acuerdo comercial previo.
-                </p>
-
-            </div>
-
-        </details>
-
-        <details class="servicio_dropdown">
-
-            <summary>
-                Derecho de rechazo
-            </summary>
-
-            <div class="servicio_dropdown_contenido">
-
-                <p>
-                    El artista puede rechazar solicitudes
-                    por disponibilidad o comodidad.
-                </p>
-
-            </div>
-
-        </details>
-
-    </div>
-
-    <!-- ========================= -->
-    <!-- BOTON -->
-    <!-- ========================= -->
-
-    <div class="servicio_boton_contenedor">
-
-        <a href="#" class="servicio_boton">
-            Ir a contacto
+    <footer>
+        <a href="#start">
+            <img src="icons/LG.svg" alt="Logo">
         </a>
 
-    </div>
+        <div>
+            <!-- SOLO TEXTO -->
+            <span id="abrirPDF">
+                Aviso de Provacidad
+            </span>
 
-</section>
-  </main>
-  <script src="js/navMenu.js"></script>
+            <!-- MODAL -->
+            <div id="miModal" class="modal">
 
+                <!-- BOTON X -->
+                <span class="close">&times;</span>
 
+                <!-- PDF -->
+                <iframe src="imgs/AVISO DE PRIVACIDAD.pdf"></iframe>
 
-  <footer>
-    <img src="icons/LG.svg" alt="Logo">
-
-    <div>
-      <!-- SOLO TEXTO -->
-      <span id="abrirPDF">
-        Aviso de Provacidad
-      </span>
-
-      <!-- MODAL -->
-      <div id="miModal" class="modal">
-
-        <!-- BOTON X -->
-        <span class="close">&times;</span>
-
-        <!-- PDF -->
-        <iframe src="imgs/AVISO DE PRIVACIDAD.pdf"></iframe>
-
-      </div>
-    </div>
+            </div>
+        </div>
 
 
-    <div>
-      <a href="https://www.instagram.com/skeshazone?igsh=MWJ0aDJmYjIwNXBpcQ%3D%3D&utm_source=qr" target="_blank"><img
-          src="icons/Instagram.svg" alt="Instagram"></a>
-      <a href="https://l.instagram.com/?u=https%3A%2F%2Fcara.app%2Fskeshazone%3Futm_source%3Dig%26utm_medium%3Dsocial%26utm_content%3Dlink_in_bio%26fbclid%3DPAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGngGe9zTeQU_tMtJ8FXwUt2iIv3N06iPwpRnspKv-NmLxFdLIEeYXiiAF0JAU_aem_Wd0rx0pUIWtp9bBovXbAEg&e=AUCDE3hIqMh3f91NN2RvLQ09yV2x5kq9et2MrHqRExHpU10nfqjqYCPod4GUOP-gfVxGbFPpJMtrX-NP_JIheH3xHBw6hjlZnsn4DvttGJEd0g6jCa0TXYIxDg"
-        target="_blank"><img src="icons/Cara_icono.svg" alt="Cara"></a>
-    </div>
-    <script src="js/cookies.js"></script>
-  </footer>
+        <div>
+
+            <a href="https://www.instagram.com/skeshazone?igsh=MWJ0aDJmYjIwNXBpcQ%3D%3D&utm_source=qr" target="_blank">
+                <img src="icons/Instagram.svg" alt="Instagram">
+            </a>
+
+            <a href="https://cara.app/skeshazone" target="_blank">
+                <img src="icons/Cara_icono.svg" alt="Cara">
+            </a>
+
+        </div>
+        <script src="js/cookies.js"></script>
+    </footer>
 </body>
 
 </html>
