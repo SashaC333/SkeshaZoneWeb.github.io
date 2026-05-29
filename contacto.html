@@ -11,18 +11,27 @@
   <link rel="stylesheet" href="css/footerStyle.css" />
   <link rel="stylesheet" href="css/forms.css">
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-179NMFYLCB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'G-179NMFYLCB');
+</script>
 
 <body>
-
-  <header class="header">
+  <header class="header" id="start">
     <nav class="nav">
-
-      <div class="nav__logo" id="start">
+      <!-- logotipo -->
+      <div class="nav__logo">
         <a href="index.html">
           <img src="icons/LG.svg" alt="Logo">
         </a>
       </div>
 
+      <!-- -->
       <ul class="nav__list">
         <li><a href="index.html" class="nav__link">Inicio</a></li>
         <li><a href="servicios.html" class="nav__link">Servicios</a></li>
@@ -30,22 +39,20 @@
         <li><a href="contacto.html" class="nav__link">Contacto</a></li>
       </ul>
 
-      <button class="nav__toggler" id="navToggler">
-        <img src="icons/menu.svg" alt="Menú">
+      <!-- burger -->
+      <button class="nav__toggler" id="navToggler" aria-label="Menú">
+        <img src="icons/menu.svg" alt="Menú" class="nav__toggler-img" />
       </button>
-
     </nav>
   </header>
 
-  <!-- SIDE MENU -->
   <div class="sidepanel" id="mySidepanel">
-    <a href="javascript:void(0)" id="sidepanelClose">&times;</a>
-    <a href="index.html">Inicio</a>
-    <a href="servicios.html">Servicios</a>
-    <a href="nosotros.html">Nosotros</a>
-    <a href="contacto.html">Contacto</a>
+    <a href="javascript:void(0)" class="sidepanel__close" id="sidepanelClose">&times;</a>
+    <a href="index.html" class="sidepanel__link">Inicio</a>
+    <a href="servicios.html" class="sidepanel__link">Servicios</a>
+    <a href="nosotros.html" class="sidepanel__link">Nosotros</a>
+    <a href="contacto.html" class="sidepanel__link">Contacto</a>
   </div>
-
   <main class="main-content">
 
     <div class="contact_page">
@@ -134,6 +141,6 @@
   </script>
 
   <script src="js/contact.js"></script>
-
+  <script src="js/navMenu.js"></script>
 </body>
 </html>
