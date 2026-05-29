@@ -9,6 +9,10 @@
 body{
     background-color: var(--cBlanco);
 }
+
+html{
+    scroll-behavior: smooth;
+}
 main p{
     font-size: 18px;
 }
